@@ -1,0 +1,108 @@
+/* General Page Styling */
+body {
+    background-image: url('walls.png');
+    background-repeat: no-repeat;
+   
+    background-position: center;
+   
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    margin-top: 5em;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Table Styling */
+table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Table Header */
+th {
+    background: #007BFF;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+}
+
+/* Table Rows */
+td {
+    background-image: url('type.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Clickable Cells */
+.clickable {
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.clickable:hover {
+    background-image: url('contact.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+/* Alternating Row Colors */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Popup Menu Styling */
+.popup {
+    display: none;
+    
+    position: absolute;
+   border: 1px solid #080808;
+    
+    padding: 12px;
+    box-shadow: 30px 30px 40px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    text-align: left;
+  
+}
+
+/* Popup Buttons */
+.popup button {
+   border-color: #ff4d4d;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.2s ease-in;
+}
+
+/* Color Buttons */
+.popup button:nth-child(1) { background: #ff4d4d; color: rgb(8, 2, 2); } /* Red - Family */
+.popup button:nth-child(2) { background: #FFD700; color: rgb(6, 4, 4); } /* Yellow - Friends */
+.popup button:nth-child(3) { background: #007BFF; color: rgb(7, 4, 4); } /* Blue - Relatives */
+
+/* Button Hover Effects */
+.popup button:hover {
+    filter: brightness(1.1);
+    color: rgb(230, 224, 224);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
